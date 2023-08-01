@@ -11,7 +11,6 @@ export default function HeroSection() {
           I&apos;ve spent the last 5 years building and scaling software for some
           pretty cool companies. I also teach people to code. <span>Let&apos;s connect!</span>
         </p>
-
       </div>
     </section>
   )

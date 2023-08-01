@@ -19,6 +19,7 @@ export default function SideBar() {
       </span>
       {myLinksLabels.map((label, i) => (
         <motion.a {...linkOptions} href={`#${label}`}
+          key={`${label}-key`}
           onClick={() => setSelected(label)}
           transition={{ duration: 0.5, delay: (i / 10) }}
           className={selected === label ? styles.selected : ""}
