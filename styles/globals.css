@@ -39,3 +39,17 @@ body {
   color: var(--text);
   background: var(--background);
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-wrapper {
+  position: relative;
+  z-index: 10;
+  max-width: 1150px;
+  margin: auto;
+  padding: 9.6rem;
+  overflow: hidden;
+}
