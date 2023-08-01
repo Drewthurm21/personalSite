@@ -15,12 +15,12 @@ const linkOptions = {
 const linkData = [
   {
     label: 'github',
-    icon: <AiFillGithub size='2.4rem' />,
+    icon: <AiFillGithub size='3.4rem' />,
     href: 'https://github.com/Drewthurm21',
   },
   {
     label: 'linkedin',
-    icon: <AiFillLinkedin size='2.4rem' />,
+    icon: <AiFillLinkedin size='3.4rem' />,
     href: 'https://www.linkedin.com/in/drew-thurman/',
   },
 ]
@@ -35,8 +35,9 @@ export default function HeaderLinks() {
             <motion.span key={link.href}
               {...linkOptions}
               transition={{ duration: .5, delay: i / 10 }}
+              className={styles.headerLink}
             >
-              <Link href={link.href} className={styles.headerLink} >
+              <Link href={link.href} target="_blank" rel="nofollow">
                 {link.icon}
               </Link>
             </motion.span>
@@ -44,7 +45,7 @@ export default function HeaderLinks() {
         })
         }
       </div>
-      <OutlinedButton onClick={() => console.log('hello.world')} > My Resume </OutlinedButton>
+      <OutlinedButton onClick={() => window.open("/myResume.pdf")} > My Resume </OutlinedButton>
     </div>
   )
 }

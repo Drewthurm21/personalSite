@@ -5,12 +5,12 @@
   padding: 3.5rem;
 
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  align-items: center;
 }
 
 .headerLink {
-  line-height: 32px;
-  margin: 0 1.5rem;
+  margin: 0 .75rem;
 
   :hover {
     color: var(--brand);
