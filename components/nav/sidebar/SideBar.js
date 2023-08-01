@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const linkOptions = { initial: { x: -70 }, animate: { x: 0 } }
 const myLinksLabels = ['about', 'projects', 'experience', 'contact']
 
-export const SideBar = () => {
+export default function SideBar() {
   const [selected, setSelected] = useState("");
 
   return (
