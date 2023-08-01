@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './home.module.scss'
 import SideBar from '../nav/sidebar/SideBar';
 import SiteHeader from '../nav/header/SiteHeader';
+import HeroSection from './hero/HeroSection';
 
 export default function Home() {
 
@@ -11,7 +12,7 @@ export default function Home() {
         <SideBar />
         <main>
           <SiteHeader />
-          main section
+          <HeroSection />
         </main>
       </div>
     </>
