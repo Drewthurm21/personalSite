@@ -1,3 +1,4 @@
+import { DotGrid } from './DotGrid'
 import styles from './herosection.module.scss'
 
 export default function HeroSection() {
@@ -10,9 +11,11 @@ export default function HeroSection() {
         <p className={styles.aboutText}>
           I&apos;ve spent years building & scaling software for some
           pretty cool companies, and created some neat wep apps along the way.
-          I also teach people to code. <span>Let'&apos;'s connect!</span>
+          I also teach people to code.
         </p>
+        <span>Let&apos;s connect!</span>
       </div>
+      <DotGrid />
     </section>
   )
 }
