@@ -15,12 +15,12 @@ const linkOptions = {
 const linkData = [
   {
     label: 'github',
-    icon: <AiFillGithub size='3.4rem' />,
+    icon: <AiFillGithub size='2.4rem' />,
     href: 'https://github.com/Drewthurm21',
   },
   {
     label: 'linkedin',
-    icon: <AiFillLinkedin size='3.4rem' />,
+    icon: <AiFillLinkedin size='2.4rem' />,
     href: 'https://www.linkedin.com/in/drew-thurman/',
   },
 ]
