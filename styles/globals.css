@@ -59,3 +59,10 @@ a {
     padding: 7.2rem 2.4rem;
   }
 }
+
+.chip {
+  font-size: var(--text-xs);
+  background: var(--background-light);
+  padding: 0.2rem 0.8rem;
+  border-radius: 999px;
+}
