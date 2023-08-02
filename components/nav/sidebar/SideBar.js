@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./sidebar.module.scss";
 import { motion } from "framer-motion";
 
@@ -7,6 +7,22 @@ const myLinksLabels = ['about', 'projects', 'experience', 'contact']
 
 export default function SideBar() {
   const [selected, setSelected] = useState("");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll(".section-wrapper");
+    const options = { threshold: 0.3 };
+
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSelected(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+    sections.forEach((section) => observer.observe(section));
+  }, []);
 
   return (
     <motion.nav
