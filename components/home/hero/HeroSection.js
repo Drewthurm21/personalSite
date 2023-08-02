@@ -16,8 +16,8 @@ export default function HeroSection() {
         <RevealWrap>
           <p className={styles.aboutText}>
             I&apos;ve spent years building & scaling software for some
-            pretty cool companies, and created some neat wep apps along the way.
-            I also teach people to code.
+            pretty cool companies, and have created some neat web apps along the way.
+            I also teach people to code_.
           </p>
         </RevealWrap>
         <RevealWrap>

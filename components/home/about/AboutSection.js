@@ -13,18 +13,17 @@ export default function AboutSection() {
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Hey! I&apos;m Drew, if you haven&apos;t already gathered that by
-              now. I&apos;m a business manager turned software engineer from Overlan Park,
-              Kansas. I specialize in the backend, primarily Node and Python, but
+              Hello! I&apos;m Drew, if you haven&apos;t already gathered that by
+              now. I&apos;m a business manager turned software engineer from Overland Park,
+              Kansas. I specialize in the backend, primarily using Node.js and Python, but
               love building with whatever tools are right for the job.
             </p>
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              I currently work with CottageCare, Wash & Seal KC, and Java Services LLC, building tools to help automate
-              their work & quote new clients.
-              I have worked for App Academy and edX as a Software Engineer Instructor as well!
-              I&apos;m a tinkerer, builder, continual learner, and an inquisitive mind with a passion
+              I work with lots of companies, building tools to help automate their workflows and quote new clients.
+              I have worked for App Academy and edX as a Software Engineer Instructor, as well!
+              I&apos;m a tinkerer & builder with an inquisitive mind. I have a passion
               for coding, problem solving, teaching and training.
             </p>
           </Reveal>
@@ -32,14 +31,14 @@ export default function AboutSection() {
             <p className={styles.aboutText}>
               Outside of work, I love to travel and go rock climbing. Any given Sunday
               you&apos;ll find me gaming with my son or coding away on a personal project. I
-              also teach courses online if you&apos;re looking to learn!
+              also teach courses online, if you&apos;re looking to learn!
             </p>
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              I&apos;m always looking for new opportunities to utilize my
-              love of coding to help your business increase productivity and avoid extra costs. If you think
-              you&apos;ve got an opening that I might like, let&apos;s connect
+              I&apos;m currently looking for new opportunities where I can utilize my
+              love of coding to help your business increase it&apos;s productivity and avoid extra costs. If you think
+              you&apos;ve got an opening that I might like, let&apos;s connect!
               🔗
             </p>
           </Reveal>
