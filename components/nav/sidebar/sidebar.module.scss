@@ -1,8 +1,6 @@
 .sideBar {
   background: var(--background-dark);
-
   height: 100vh;
-
   position: sticky;
   top: 0px;
   left: 0px;
@@ -18,9 +16,7 @@
 
   a {
     height: 120px;
-
     flex-shrink: 0;
-
     writing-mode: vertical-lr;
     font-size: var(--text-sm);
     font-weight: 200;
@@ -28,9 +24,7 @@
     align-items: center;
     justify-content: center;
     opacity: 0.5;
-
     border-right: 1px solid transparent;
-
     transition: .1s all;
     width: 100%;
   }
