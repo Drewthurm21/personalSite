@@ -21,7 +21,8 @@ export default function AboutSection() {
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              I currently work for CottageCare building tools to help automate their call center.
+              I currently work with CottageCare, Wash & Seal KC, and Java Services LLC, building tools to help automate
+              their work & quote new clients.
               I have worked for App Academy and edX as a Software Engineer Instructor as well!
               I'm a tinkerer, builder, continual learner, and an inquisitive mind with a passion
               for coding, problem solving, teaching and training.
@@ -36,8 +37,8 @@ export default function AboutSection() {
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              I&apos;m always looking for new opportunities to merge my
-              love of coding with my love for the canvas. If you think
+              I&apos;m always looking for new opportunities to utilize my
+              love of coding to help your business increase productivity and avoid extra costs. If you think
               you&apos;ve got an opening that I might like, let&apos;s connect
               🔗
             </p>
