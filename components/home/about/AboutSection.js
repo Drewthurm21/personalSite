@@ -24,7 +24,7 @@ export default function AboutSection() {
               I currently work with CottageCare, Wash & Seal KC, and Java Services LLC, building tools to help automate
               their work & quote new clients.
               I have worked for App Academy and edX as a Software Engineer Instructor as well!
-              I'm a tinkerer, builder, continual learner, and an inquisitive mind with a passion
+              I&apos;m a tinkerer, builder, continual learner, and an inquisitive mind with a passion
               for coding, problem solving, teaching and training.
             </p>
           </Reveal>

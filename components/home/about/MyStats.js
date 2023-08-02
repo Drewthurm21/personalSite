@@ -24,7 +24,7 @@ export default function MyStats() {
           </h4>
           <div className={styles.statGrid}>
             {workTechLabels.map(label => (
-              <span className='chip'>{label}</span>
+              <span key={label} className='chip'>{label}</span>
             ))}
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function MyStats() {
           </h4>
           <div className={styles.statGrid}>
             {funTechLabels.map(label => (
-              <span className='chip'>{label}</span>
+              <span key={label} className='chip'>{label}</span>
             ))}
           </div>
         </div>
