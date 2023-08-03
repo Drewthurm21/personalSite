@@ -20,7 +20,7 @@ export default function MyStats() {
         <div className={styles.statColumn}>
           <h4>
             <AiFillCode size="2.4rem" color="var(--brand)" />
-            <span>Useing at work</span>
+            <span>Using at work</span>
           </h4>
           <div className={styles.statGrid}>
             {workTechLabels.map(label => (
