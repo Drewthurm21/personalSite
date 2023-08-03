@@ -1,6 +1,4 @@
 .headerLinks {
-  
-  max-width: 30%;
 
   a { 
     margin-top: 1rem;
@@ -13,9 +11,14 @@
     opacity: 1;
   }
 
+  
   @media (max-width: 768px) {
     a {
       margin: 0;
+    }
+
+    p {
+      font-size: var(--text-xs);
     }
   }
 }

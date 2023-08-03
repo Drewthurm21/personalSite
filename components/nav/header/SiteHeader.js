@@ -6,10 +6,7 @@ export default function SiteHeader() {
 
   return (
     <header className={styles.header} >
-      <div>
-        <p>drewthurmcodes@gmail.com</p>
-        <HeaderLinks />
-      </div>
+      <HeaderLinks />
       <OutlinedButton onClick={() => window.open("/myResume.pdf")}>My Resume</OutlinedButton>
     </header>
   )

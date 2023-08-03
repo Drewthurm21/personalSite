@@ -37,6 +37,7 @@ export default function HeaderLinks() {
         )
       })
       }
+      <p>drewthurmcodes@gmail.com</p>
     </div>
   )
 }
