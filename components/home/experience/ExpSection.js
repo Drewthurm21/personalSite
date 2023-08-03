@@ -16,11 +16,11 @@ const experience = [
   {
     title: "Wash & Seal KC",
     position: "Software Engineer",
-    time: "2023 - present",
+    time: "Contract",
     location: "Overland Park, KS",
     description:
-      "Building tools to calculate job costs, empowering teams to accurately quote services on site/on the fly. Integrate inventory & equipment tracking, and create a tool to generate job-specific supply checklists for crews. Tagged along for a power washing adventure. Saw a demo on antiquing. Turns out, concrete is pretty cool!",
-    tech: ['Node', 'React', 'Redux', 'Tailwind', 'SCSS', 'Python', 'Flask', 'SQLAlchemy', 'Render'],
+      "Built API to calculate job costs & quote services on site/on the fly. Made a pretty front-end in React. Also tagged along for a power washing adventure.",
+    tech: ['Node', 'React', 'Redux', 'Tailwind', 'SCSS', 'Render', 'Supabase'],
   },
   {
     title: "CottageCare",
