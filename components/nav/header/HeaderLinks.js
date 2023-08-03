@@ -22,21 +22,25 @@ const linkData = [
 
 export default function HeaderLinks() {
 
-  return (
+  return (<>
     <div className={styles.headerLinks} >
-      {linkData.map((link, i) => {
-        return (
-          <motion.span key={link.href}
-            {...linkOptions}
-            transition={{ duration: .5, delay: i / 10 }}
-          >
-            <Link href={link.href} target="_blank" rel="nofollow">
-              {link.icon}
-            </Link>
-          </motion.span>
-        )
-      })
-      }
+      <p className={styles.email}>drewthurmcodes@gmail.com</p>
+      <div>
+        {linkData.map((link, i) => {
+          return (
+            <motion.span key={link.href}
+              {...linkOptions}
+              transition={{ duration: .5, delay: i / 10 }}
+            >
+              <Link href={link.href} target="_blank" rel="nofollow">
+                {link.icon}
+              </Link>
+            </motion.span>
+          )
+        })
+        }
+      </div>
     </div>
+  </>
   )
 }
