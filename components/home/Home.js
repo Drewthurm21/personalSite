@@ -17,8 +17,8 @@ export default function Home() {
           <SiteHeader />
           <HeroSection />
           <AboutSection />
-          <ContactSection />
           <ExpSection />
+          <ContactSection />
         </main>
       </div>
     </>
