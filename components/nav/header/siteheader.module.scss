@@ -15,7 +15,15 @@
   font-size: var(--text-md);
   font-weight: bold;
 
+  p {
+    font-size: var(--text-sm);
+  }
+
   @media (max-width: 768px) {
     padding: 0 2.4rem;
+
+    p {
+      font-size: var(--text-xs);
+    }
   }
 }
