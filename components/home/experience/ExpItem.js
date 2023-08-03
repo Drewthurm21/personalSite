@@ -1,9 +1,9 @@
 import RevealWrap from "@/components/utils/RevealWrap";
 import styles from "./expsection.module.scss";
 
-export const ExperienceItem = ({
+export default function ExpItem({
   title, position, time, location, description, tech,
-}) => {
+}) {
   return (
     <div className={styles.experience}>
       <div className={styles.header}>

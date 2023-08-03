@@ -5,6 +5,7 @@ import ContactSection from './contact/ContactSection';
 import SiteHeader from '../nav/header/SiteHeader';
 import AboutSection from './about/AboutSection';
 import HeroSection from './hero/HeroSection';
+import ExpSection from './experience/ExpSection';
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
           <HeroSection />
           <AboutSection />
           <ContactSection />
+          <ExpSection />
         </main>
       </div>
     </>
