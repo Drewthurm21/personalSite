@@ -11,7 +11,7 @@ export default function HeroSection() {
           <h1 className={styles.title}>Hey! I&apos;m Drew<span>.</span></h1>
         </RevealWrap>
         <RevealWrap>
-          <h2 className={styles.subTitle}>I&apos;m a <span>Full Stack Developer</span></h2>
+          <h2 className={styles.subTitle}>I&apos;m a <span>Full Stack Developer</span>.</h2>
         </RevealWrap>
         <RevealWrap>
           <p className={styles.aboutText}>

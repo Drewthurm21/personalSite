@@ -1,5 +1,5 @@
 import RevealWrap from "@/components/utils/RevealWrap";
-import { AiFillMail } from "react-icons/ai";
+import { AiFillMail, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Link from "next/link";
 import styles from "./contactsection.module.scss";
 
@@ -13,24 +13,26 @@ export default function ContactSection() {
           </h4>
         </RevealWrap>
         <RevealWrap width="100%">
-          <p className={styles.contactCopy}>
-            Shoot me an email if you want to connect! You can also find me on{" "}
-            <Link
-              href="https://www.linkedin.com/drew-thurman"
-              target="_blank"
-              rel="nofollow"
-            >
-              Linkedin
-            </Link>
-          </p>
-        </RevealWrap>
-        <RevealWrap width="100%">
-          <Link href="mailto:drewthurmcodes@gmail.com">
-            <div className={styles.contactEmail}>
-              <AiFillMail size="2.4rem" />
-              <span>drewthurmcodes@gmail.com</span>
-            </div>
+          <div>
+            Here are my links if you want to connect.
+          </div>
+          <div>
+            I'd love to hear from you!
+          </div>
+          <Link href="mailto:drewthurmcodes@gmail.com" target="_blank">
+            <span className={styles.contactEmail}>drewthurmcodes@gmail.com</span>
           </Link>
+          <div className={styles.contactIcons}>
+            <Link href="mailto:drewthurmcodes@gmail.com" target="_blank">
+              <AiFillMail size="2.4rem" />
+            </Link>
+            <Link href="https://www.github.com/drewthurm21" target="_blank">
+              <AiFillGithub size="2.4rem" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/drew-thurman/" target="_blank">
+              <AiFillLinkedin size="2.4rem" />
+            </Link>
+          </div>
         </RevealWrap>
       </div>
     </section>
