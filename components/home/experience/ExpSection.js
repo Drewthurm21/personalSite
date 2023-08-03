@@ -5,8 +5,8 @@ export default function ExpSection() {
   return (
     <section className="section-wrapper" id="experience">
       <SectionHeader title="Experience" dir="l" />
-      {experience.map((item) => (
-        <ExpItem {...item} />
+      {experience.map((item, i) => (
+        <ExpItem key={`${i}-${item.title}`} {...item} />
       ))}
     </section>
   );
