@@ -19,7 +19,7 @@ const experience = [
     time: "2023 - present",
     location: "Overland Park, KS",
     description:
-      "Building tools to calculate job costs, empowering owner to give fast and accurate quotes on site/on the fly. Integrate inventory & equipment tracking, and create tool to generate job-specific supply checklists for crews. Tagged along for a power washing adventure. Saw a cool demo on antique sealers!",
+      "Building tools to calculate job costs, empowering teams to accurately quote services on site/on the fly. Integrate inventory & equipment tracking, and create a tool to generate job-specific supply checklists for crews. Tagged along for a power washing adventure. Saw a demo on antiquing. Turns out, concrete is pretty cool!",
     tech: ['Node', 'React', 'Redux', 'Tailwind', 'SCSS', 'Python', 'Flask', 'SQLAlchemy', 'Render'],
   },
   {
