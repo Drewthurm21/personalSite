@@ -22,10 +22,9 @@ const linkData = [
 
 export default function HeaderLinks() {
 
-  return (<>
-    <div className={styles.headerLinks} >
-      <p className={styles.email}>drewthurmcodes@gmail.com</p>
-      <div>
+  return (
+    <>
+      <div className={styles.headerLinks} >
         {linkData.map((link, i) => {
           return (
             <motion.span key={link.href}
@@ -40,7 +39,6 @@ export default function HeaderLinks() {
         })
         }
       </div>
-    </div>
-  </>
+    </>
   )
 }

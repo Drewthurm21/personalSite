@@ -1,11 +1,10 @@
 .headerLinks {
   display:flex;
-  flex-direction: column;
   gap: 1.6;
   padding-top: 10px;
 
   a { 
-    margin-top: 1rem;
+    margin: 0 .5rem;
     opacity: .5;
     position: relative;
   }

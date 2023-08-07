@@ -30,7 +30,6 @@ export const DotGrid = () => {
   let selectedDots = (() => {
     let options = [], i = 0,
       j = (GRID_HEIGHT * GRID_WIDTH) - (GRID_WIDTH * 3);
-    console.log(j)
     while (i < (GRID_WIDTH * 4) && j < ((GRID_HEIGHT * GRID_WIDTH) - 1)) {
       options.push(i, j); i++; j++;
     }

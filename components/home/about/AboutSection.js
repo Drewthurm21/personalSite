@@ -13,10 +13,9 @@ export default function AboutSection() {
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Hello! I&apos;m Drew, if you haven&apos;t already gathered that by
-              now. I&apos;m a business manager turned software engineer from Overland Park,
-              Kansas. I specialize in the backend, primarily using Node.js and Python, but
-              love building with whatever tools are right for the job.
+              Hello! I&apos;m Drew! I&apos;m a business manager turned software engineer from Overland Park,
+              Kansas. I can work anywhere across the stack, primarily using Node.js and Python, but
+              love building with whatever tech is right for the job.
             </p>
           </Reveal>
           <Reveal>
