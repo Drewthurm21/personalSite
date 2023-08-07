@@ -17,7 +17,7 @@ export default function ContactSection() {
             Here are my links if you want to connect.
           </div>
           <div>
-            I'd love to hear from you!
+            I&apos;d love to hear from you!
           </div>
           <Link href="mailto:drewthurmcodes@gmail.com" target="_blank">
             <span className={styles.contactEmail}>drewthurmcodes@gmail.com</span>
