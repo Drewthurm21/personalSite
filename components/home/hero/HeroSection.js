@@ -1,11 +1,12 @@
-import { DotGrid } from './DotGrid'
-import styles from './herosection.module.scss'
-import RevealWrap from '@/components/utils/RevealWrap'
+import React from 'react';
+import DotGrid from './DotGrid';
+import styles from './herosection.module.scss';
+import RevealWrap from '../../utils/RevealWrap';
 
 export default function HeroSection() {
 
   return (
-    <section className={`section-wrapper ${styles.hero}`}>
+    <section className={`section-wrapper ${styles.heroWrap}`}>
       <div className={styles.copyWrap}>
         <RevealWrap>
           <h1 className={styles.title}>Hey! I&apos;m Drew<span>.</span></h1>
