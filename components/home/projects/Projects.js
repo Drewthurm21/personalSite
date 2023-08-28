@@ -28,12 +28,12 @@ const projects = [
       <>
         <p>
           A pared-down clone of the popular stock trading website RobinHood.com, LittleJohn
-          (see what I did there?) is a WIP stock trading app w/ monopoly money.
+          (see what I did there?) is a WIP stock trading sandbox.
         </p>
         <p>
-          The tech stack is Python & Flask on the backend, with SQLAlchemy being the chosen ORM. The frontend is built in React & Redux is utilized for state management.
-          This app leverages the FinnHub and AlphaVantage APIs for all company info and stock history, as well as market news.
-          It is deployed on Render.
+          The tech stack is Python & Flask with SQLAlchemy on the backend. The frontend is built in React, and uses Redux state management.
+          This app leverages the FinnHub and AlphaVantage APIs for all company info and stock history, as well as market news, and Socket.io (websockets) for real-time stock charts.
+          <p>It is deployed on Render.</p>
         </p>
         <p>
           This is a WIP project, with the following features implemented:
