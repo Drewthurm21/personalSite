@@ -19,10 +19,10 @@ export default function ProjectSection() {
 const projects = [
   {
     title: "LittleJohn",
-    imgSrc: "",
+    imgSrc: "../../../littleJohnHero.PNG",
     code: "https://github.com/Drewthurm21/littleJohn",
     projectLink: "https://littlejohn-oqy7.onrender.com/",
-    tech: ["React", "Redux", "Python", "Flask", "APIs"],
+    tech: ["Node.js", "React", "Redux", "Python", "Flask", "SQLAlchemy", "APIs", "Socket.io"],
     description: "Have you ever wondered what it would be like to cause your own financial meltown on wall street?  Well now you can!",
     modalContent: (
       <>
@@ -37,17 +37,18 @@ const projects = [
         </p>
         <p>
           This is a WIP project, with the following features implemented:
-          Users & authentication
-          Stock lookup & history
-          Real-time graphs via websockets
-          Portfolios & Trades
-          Watchlists
+          <p>Users & authentication</p>
+          <p>Stock lookup & history</p>
+          <p>Real-time stock charts</p>
+          <p>Stock Trades</p>
+          <p>Watchlists</p>
         </p>
         <p>
           And the following features to come!
-          Add / edit payment methods - safely store payment methods for cash deposits
-          Stock history controls - select from multiple data sets, and graph styles
-          ChatGPT integrations - a chat bot for users to ask stock or market questions
+          <p>* Multiple Portfolios - test multiple trading strategies separately</p>
+          <p>Add / edit payment methods - safely store payment methods for cash deposits</p>
+          <p>Stock history controls - select from multiple data sets, and graph styles</p>
+          <p>ChatGPT integrations - a chat bot for users to ask stock or market questions</p>
         </p>
       </>
     ),

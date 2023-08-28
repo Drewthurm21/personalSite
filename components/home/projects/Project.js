@@ -3,14 +3,15 @@ import { useAnimation, useInView, motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
-import styles from './projects.module.scss'
+import ProjectModal from "./ProjectModal";
+import styles from "./projects.module.scss";
 
 export default function Project({
   modalContent, projectLink, description,
   imgSrc, title, code, tech,
 }) {
   const [hovered, setHovered] = useState(false);
-  const [isOpen, setIsOpen] = useState(false); // for modal
+  const [isOpen, setIsOpen] = useState(false);
 
   const controls = useAnimation();
 
@@ -77,6 +78,16 @@ export default function Project({
           </RevealWrap>
         </div>
       </motion.div>
+      <ProjectModal
+        modalContent={modalContent}
+        projectLink={projectLink}
+        setIsOpen={setIsOpen}
+        isOpen={isOpen}
+        imgSrc={imgSrc}
+        title={title}
+        code={code}
+        tech={tech}
+      />
     </>
   );
 };
