@@ -3,7 +3,7 @@ import styles from "./sidebar.module.scss";
 import { motion } from "framer-motion";
 
 const linkOptions = { initial: { x: -70 }, animate: { x: 0 } }
-const myLinksLabels = ['about', 'experience', 'contact']
+const myLinksLabels = ['about', 'experience', 'projects', 'contact']
 
 export default function SideBar() {
   const [selected, setSelected] = useState("");
