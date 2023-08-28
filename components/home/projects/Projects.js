@@ -1,14 +1,15 @@
-import { SectionHeader } from "@/components/utils/SectionHeader";
-import styles from "./projects.module.scss";
+import SectionHeader from "@/components/utils/SectionHeader";
+import Project from './Project'
+import styles from './projects.module.scss'
 
-export const Projects = () => {
+export default function ProjectSection() {
   return (
     <section className="section-wrapper" id="projects">
       <SectionHeader title="Projects" dir="r" />
 
       <div className={styles.projects}>
         {projects.map((project) => {
-          return <div>PROJECT CARD</div>;
+          return <Project key={project.title} {...project} />;
         })}
       </div>
     </section>
@@ -22,13 +23,12 @@ const projects = [
     code: "https://github.com/Drewthurm21/littleJohn",
     projectLink: "https://littlejohn-oqy7.onrender.com/",
     tech: ["React", "Redux", "Python", "Flask", "APIs"],
-    description:
-      "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.",
+    description: "Have you ever wondered what it would be like to cause your own financial meltown on wall street?  Well now you can!",
     modalContent: (
       <>
         <p>
-          A pared-down clone of the popular stock trading website RobinHood.com, LittleJohn (see what I did there) has been a
-          really fun project to work on and figure out.
+          A pared-down clone of the popular stock trading website RobinHood.com, LittleJohn
+          (see what I did there?) is a WIP stock trading app w/ monopoly money.
         </p>
         <p>
           The tech stack is Python & Flask on the backend, with SQLAlchemy being the chosen ORM. The frontend is built in React & Redux is utilized for state management.
