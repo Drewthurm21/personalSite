@@ -3,9 +3,10 @@ import styles from './home.module.scss'
 import SideBar from '../nav/sidebar/SideBar';
 import ContactSection from './contact/ContactSection';
 import SiteHeader from '../nav/header/SiteHeader';
+import ExpSection from './experience/ExpSection';
+import ProjectSection from './projects/Projects';
 import AboutSection from './about/AboutSection';
 import HeroSection from './hero/HeroSection';
-import ExpSection from './experience/ExpSection';
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
           <HeroSection />
           <AboutSection />
           <ExpSection />
+          <ProjectSection />
           <ContactSection />
         </main>
       </div>
