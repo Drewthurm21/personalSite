@@ -15,7 +15,7 @@ const ContactForm = () => {
         onClick={() => {
           inputRef.current?.focus();
         }}
-        className="h-96 md-scale-[1.6] bg-slate-950/70 backdrop-blur rounded-lg w-full max-w-3xl mx-auto overflow-y-scroll shadow-xl cursor-text font-mono"
+        className="h-96 md:scale-[1.6] bg-slate-950/70 backdrop-blur rounded-lg w-full max-w-3xl mx-auto overflow-y-scroll shadow-xl cursor-text font-mono"
       >
         <TerminalHeader />
         <TerminalBody inputRef={inputRef} containerRef={containerRef} />
@@ -163,7 +163,7 @@ const Summary = ({ questions, setQuestions }) => {
           </p>
         );
       })}
-      <p>Look good?</p>
+      <p>Did I get that right?</p>
       {complete ? (
         <p className="text-emerald-300">
           <FiCheckCircle className="inline-block mr-2" />
@@ -264,7 +264,7 @@ export default ContactForm;
 const QUESTIONS = [
   {
     key: "email",
-    text: "To start, could you give us ",
+    text: "To start, could you give me ",
     postfix: "your email?",
     complete: false,
     value: "",
