@@ -79,7 +79,7 @@ const TerminalBody = ({ containerRef, inputRef }) => {
           containerRef={containerRef}
         />
       ) : (
-        <Summary questions={questions} setQuestions={setQuestions} />
+        <Summary questions={questions} setQuestions={setQuestions} containerRef={containerRef} />
       )}
     </div>
   );
@@ -136,8 +136,9 @@ const CurrentQuestion = ({ curQuestion }) => {
   );
 };
 
-const Summary = ({ questions, setQuestions }) => {
-  const [complete, setComplete] = useState(false);
+const Summary = ({ questions, setQuestions, containerRef }) => {
+  const [complete, setComplete] = useState(true);
+  const [emailConfirmation, setEmailConfirmation] = useState('321');
 
   const handleReset = () => {
     setQuestions((pv) => pv.map((q) => ({ ...q, value: "", complete: false })));
@@ -148,7 +149,6 @@ const Summary = ({ questions, setQuestions }) => {
       return { ...acc, [val.key]: val.value };
     }, {});
 
-    console.log('formData in handleSend', JSON.stringify(formData))
 
     let res = await fetch('/api/send', {
       method: 'POST',
@@ -158,12 +158,13 @@ const Summary = ({ questions, setQuestions }) => {
 
     if (res.ok) {
       let { id } = await res.json();
-
-      console.log('email sent', id)
-      // setComplete(true);
+      setEmailConfirmation(id)
+      setComplete(true);
+      if (containerRef.current) {
+        containerRef.current.scrollTop = containerRef.current.scrollHeight;
+      }
     } else {
       let err = await res.json();
-
       console.log('email failed', err)
     }
 
@@ -171,7 +172,9 @@ const Summary = ({ questions, setQuestions }) => {
 
   return (
     <>
-      <p>Beautiful! Here's what I've got:</p>
+      <br />
+      <p className='text-emerald-300'>Beautiful! Here's what I've got:</p>
+      <br />
       {questions.map((q) => {
         return (
           <p key={q.key}>
@@ -179,12 +182,16 @@ const Summary = ({ questions, setQuestions }) => {
           </p>
         );
       })}
-      <p>Did I get that right?</p>
-      {complete ? (
-        <p className="text-emerald-300">
-          <FiCheckCircle className="inline-block mr-2" />
-          <span>Sent! I'll get back to you ASAP 😎</span>
-        </p>
+      <br />
+      <p className='text-emerald-300'>Does that all look correct?</p>
+      <br />
+      {complete && emailConfirmation ? (
+        <div className="flex flex-col text-emerald-300">
+
+          <span className="text-emerald-300"><FiCheckCircle className="inline-block mr-2" />Thanks!</span> Your confirmation ID is:
+          <span>{emailConfirmation}</span>
+          <span>I'll get back to you ASAP!</span>
+        </div>
       ) : (
         <div className="flex gap-2 mt-2">
           <button

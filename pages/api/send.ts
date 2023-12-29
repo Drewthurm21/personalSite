@@ -6,8 +6,6 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const clientInfo = req.body;
-
-  console.log('clientInfo inside route', clientInfo)
   
   const { data, error } = await resend.emails.send({
     from: 'drew@drewthurmcodes.com',
