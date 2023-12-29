@@ -173,7 +173,7 @@ const Summary = ({ questions, setQuestions, containerRef }) => {
   return (
     <>
       <br />
-      <p className='text-emerald-300'>Beautiful! Here's what I've got:</p>
+      <p className='text-emerald-300'>{`Beautiful! Here's what I've got:`}</p>
       <br />
       {questions.map((q) => {
         return (
@@ -190,7 +190,7 @@ const Summary = ({ questions, setQuestions, containerRef }) => {
 
           <span className="text-emerald-300"><FiCheckCircle className="inline-block mr-2" />Thanks!</span> Your confirmation ID is:
           <span>{emailConfirmation}</span>
-          <span>I'll get back to you ASAP!</span>
+          <span>{`I'll get back to you ASAP!`}</span>
         </div>
       ) : (
         <div className="flex gap-2 mt-2">

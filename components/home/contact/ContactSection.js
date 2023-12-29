@@ -12,7 +12,7 @@ export default function ContactSection() {
       <div className={styles.contactWrapper}>
         <RevealWrap width="100%">
           <div>
-            Here are my links if you'd like to connect.
+            {`Here are my links if you'd like to connect.`}
           </div>
           <Link href="mailto:drewthurmcodes@gmail.com" target="_blank">
             <span className={styles.contactEmail}>drewthurmcodes@gmail.com</span>
