@@ -1,4 +1,4 @@
-import SectionHeader from "@/components/utils/SectionHeader";
+import SectionHeader from "../../utils/SectionHeader";
 import Project from './Project'
 import styles from './projects.module.scss'
 

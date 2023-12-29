@@ -1,4 +1,4 @@
-import RevealWrap from "@/components/utils/RevealWrap";
+import RevealWrap from "../../utils/RevealWrap";
 import styles from "./expsection.module.scss";
 
 export default function ExpItem({

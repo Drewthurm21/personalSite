@@ -1,4 +1,4 @@
-import RevealWrap from "@/components/utils/RevealWrap";
+import RevealWrap from "../../utils/RevealWrap";
 import { useAnimation, useInView, motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";

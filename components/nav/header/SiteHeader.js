@@ -1,6 +1,6 @@
 import styles from './siteheader.module.scss'
 import HeaderLinks from './HeaderLinks';
-import OutlinedButton from '@/components/buttons/OutlinedButton';
+import OutlinedButton from '../../buttons/OutlinedButton';
 
 export default function SiteHeader() {
 

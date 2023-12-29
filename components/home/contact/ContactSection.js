@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import RevealWrap from "@/components/utils/RevealWrap";
+import RevealWrap from "../../utils/RevealWrap";
 import ContactForm from "./ContactForm";
 import styles from "./contactsection.module.scss";
-import SectionHeader from "@/components/utils/SectionHeader";
+import SectionHeader from "../../utils/SectionHeader";
 
 export default function ContactSection() {
   return (

@@ -17,10 +17,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./"]
-    }
+      "baseUrl": ".",
+  "paths": {
+    "@/*": ["./"]
+  }
   },
   "include": [
     "next-env.d.ts",
