@@ -138,7 +138,7 @@ const CurrentQuestion = ({ curQuestion }) => {
 
 const Summary = ({ questions, setQuestions, containerRef }) => {
   const [complete, setComplete] = useState(true);
-  const [emailConfirmation, setEmailConfirmation] = useState('321');
+  const [emailConfirmation, setEmailConfirmation] = useState('');
 
   const handleReset = () => {
     setQuestions((pv) => pv.map((q) => ({ ...q, value: "", complete: false })));
@@ -159,10 +159,10 @@ const Summary = ({ questions, setQuestions, containerRef }) => {
     if (res.ok) {
       let { id } = await res.json();
       setEmailConfirmation(id)
-      setComplete(true);
       if (containerRef.current) {
         containerRef.current.scrollTop = containerRef.current.scrollHeight;
       }
+      setComplete(true);
     } else {
       let err = await res.json();
       console.log('email failed', err)
