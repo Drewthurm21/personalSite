@@ -1,4 +1,4 @@
-import SectionHeader from "@/components/utils/SectionHeader";
+import SectionHeader from "../../utils/SectionHeader";
 import ExpItem from "./ExpItem";
 
 export default function ExpSection() {

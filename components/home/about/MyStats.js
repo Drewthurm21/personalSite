@@ -1,5 +1,5 @@
 import { AiFillCode, AiFillSmile } from "react-icons/ai";
-import RevealWrap from "@/components/utils/RevealWrap";
+import RevealWrap from "../../utils/RevealWrap";
 import styles from "./mystats.module.scss";
 
 const workTechLabels = [

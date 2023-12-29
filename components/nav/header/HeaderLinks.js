@@ -1,7 +1,6 @@
 import styles from './headerlinks.module.scss'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import OutlinedButton from '@/components/buttons/OutlinedButton';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 
 const linkOptions = {

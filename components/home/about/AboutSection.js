@@ -1,7 +1,7 @@
 import { AiOutlineArrowRight } from "react-icons/ai";
-import Reveal from "@/components/utils/RevealWrap";
-import SectionHeader from "@/components/utils/SectionHeader";
-import MyLinks from "@/components/nav/header/HeaderLinks";
+import Reveal from "../../utils/RevealWrap";
+import SectionHeader from "../../utils/SectionHeader";
+import MyLinks from "../../nav/header/HeaderLinks";
 import MyStats from "./MyStats";
 import styles from "./aboutsection.module.scss";
 
