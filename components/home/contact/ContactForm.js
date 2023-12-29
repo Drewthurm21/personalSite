@@ -26,7 +26,7 @@ const ContactForm = () => {
 
 const TerminalHeader = () => {
   return (
-    <div className="w-full p-3 bg-slate-900 flex items-center gap-1 sticky top-0">
+    <div className="w-full p-3 bg-slate-900 flex items-center gap-1 sticky top-0 cursor-pointer">
       <div className="w-3 h-3 rounded-full bg-red-500" />
       <div className="w-3 h-3 rounded-full bg-yellow-500" />
       <div className="w-3 h-3 rounded-full bg-green-500" />
@@ -88,7 +88,8 @@ const TerminalBody = ({ containerRef, inputRef }) => {
 const InitialText = () => {
   return (
     <>
-      <p className='text-md'>Hey there, I'm excited to connect! 🔗</p>
+      <p className='text-md'>Welcome to the terminal!</p>
+      <p>Please type your answers and press Enter to continue</p>
       <p className="whitespace-nowrap text-md overflow-hidden font-light">
         ------------------------------------------------------------------------
       </p>
@@ -142,15 +143,30 @@ const Summary = ({ questions, setQuestions }) => {
     setQuestions((pv) => pv.map((q) => ({ ...q, value: "", complete: false })));
   };
 
-  const handleSend = () => {
+  const handleSend = async () => {
     const formData = questions.reduce((acc, val) => {
       return { ...acc, [val.key]: val.value };
     }, {});
 
-    // Send this data to your server or whatever :)
-    console.log(formData);
+    console.log('formData in handleSend', JSON.stringify(formData))
 
-    setComplete(true);
+    let res = await fetch('/api/send', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+
+    if (res.ok) {
+      let { id } = await res.json();
+
+      console.log('email sent', id)
+      // setComplete(true);
+    } else {
+      let err = await res.json();
+
+      console.log('email failed', err)
+    }
+
   };
 
   return (
