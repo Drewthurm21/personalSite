@@ -18,12 +18,34 @@ export default function ProjectSection() {
 
 const projects = [
   {
+    title: "Jake Hembree Design",
+    imgSrc: "../../../jakeHembreeHero.png",
+    code: "https://github.com/Drewthurm21/jakeprofile",
+    projectLink: "https://www.jakehembree.com",
+    tech: ["Next.js", "React", "Tailwind", "Framer-Motion", "Resend", "Vercel"],
+    description: "Are you looking for a portfolio website for your small business or company?  I can do that!",
+    modalContent: (
+      <>
+        <p>
+          One of my favorite projects so far! This is a beautiful portfolio website with a simple built-in CMS for my friend, and insanely talented graphic designer, Jake Hembree.
+        </p>
+        <p>
+          Since this is a simple SPA with minimal interactivity, I decided to build this in Next.js / React using Tailwind and framer-motion for the styles. The email functionality and templating are handled by Resend, and
+          the site is deployed on Render.
+        </p>
+        <p>
+          He wanted a simple, clean, easy to update site to showcase his work, and I think we nailed it! Check it out via the link below.
+        </p>
+      </>
+    ),
+  },
+  {
     title: "LittleJohn",
     imgSrc: "../../../littleJohnHero.PNG",
     code: "https://github.com/Drewthurm21/littleJohn",
-    projectLink: "https://littlejohn-oqy7.onrender.com/",
+    projectLink: "",
     tech: ["Node.js", "React", "Redux", "Python", "Flask", "SQLAlchemy", "APIs", "Socket.io"],
-    description: "Have you ever wondered what it would be like to cause your own financial meltown on wall street?  Well now you can!",
+    description: "Have you ever wondered how it would feel to trade millions from the comfort of your own couch?  You might wanna try this app I made.",
     modalContent: (
       <>
         <p>

@@ -62,9 +62,11 @@ export default function Project({
               <Link href={code} target="_blank" rel="nofollow">
                 <AiFillGithub size="2.8rem" />
               </Link>
-              <Link href={projectLink} target="_blank" rel="nofollow">
-                <AiOutlineExport size="2.8rem" />
-              </Link>
+              {projectLink &&
+                <Link href={projectLink} target="_blank" rel="nofollow">
+                  <AiOutlineExport size="2.8rem" />
+                </Link>
+              }
             </div>
           </RevealWrap>
           <RevealWrap>
