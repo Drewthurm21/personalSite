@@ -57,9 +57,11 @@ export default function ProjectModal({
               <Link target="_blank" rel="nofollow" href={code}>
                 <AiFillGithub /> source code
               </Link>
-              <Link target="_blank" rel="nofollow" href={projectLink}>
-                <AiOutlineExport /> live project
-              </Link>
+              {projectLink &&
+                <Link target="_blank" rel="nofollow" href={projectLink ? projectLink : ""}>
+                  <AiOutlineExport /> live project
+                </Link>
+              }
             </div>
           </div>
         </div>
