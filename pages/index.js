@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Home from '../components/home/Home'
-import { Analytics } from 'vercel/analytics'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function home() {
   return (
