@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Home from '../components/home/Home'
+import { Analytics } from 'vercel/analytics'
 
 export default function home() {
   return (
@@ -11,6 +12,7 @@ export default function home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Home />
+      <Analytics />
     </>
   )
 }
