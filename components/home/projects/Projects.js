@@ -34,7 +34,7 @@ const projects = [
           the site is deployed on Render.
         </p>
         <p>
-          He wanted a simple, clean, easy to update site to showcase his work, and I think we nailed it! Check it out via the link below.
+          Jake wanted a simple, clean, easy to update site to showcase his work, and I think we nailed it! Check it out via the link below.
         </p>
       </>
     ),
@@ -87,7 +87,7 @@ const projects = [
     modalContent: (
       <>
         <p>
-          A pared-down clone of the popular stock trading website RobinHood.com, LittleJohn
+          A sidekick to the popular stock trading website RobinHood.com, LittleJohn
           (see what I did there?) is a WIP stock trading sandbox.
         </p>
         <p>
