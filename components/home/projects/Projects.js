@@ -30,7 +30,7 @@ const projects = [
           One of my favorite projects so far! This is a beautiful portfolio website with a simple built-in CMS for my friend, and insanely talented graphic designer, Jake Hembree.
         </p>
         <p>
-          It's built in Next.js / React using Tailwind and framer-motion for the styles. The email functionality and templating are handled by Resend, and
+          It&apos;s built in Next.js / React using Tailwind and framer-motion for the styles. The email functionality and templating are handled by Resend, and
           the site is deployed on Render.
         </p>
         <p>
